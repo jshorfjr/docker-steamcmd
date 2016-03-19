@@ -4,7 +4,7 @@ MAINTAINER Jeffrey Shorf Jr. <jsho4realyo@gmail.com>
 
 # Install dependencies required to run SteamCMD
 RUN apt-get update &&\
-	apt-get install lib32gcc1
+    apt-get install lib32gcc1
 
 # Create directory, switch to it, download SteamCMD for Linux
 RUN mkdir /opt/steamcmd &&\
