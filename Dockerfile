@@ -13,7 +13,7 @@ RUN apt-get update &&\
 # Create directory, switch to it, download SteamCMD for Linux, Extract
 RUN mkdir -p /opt/steamcmd &&\
     cd /opt/steamcmd &&\
-    curl -s https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar xvz
+    curl -s http://media.steampowered.com/installer/steamcmd_linux.tar.gz | tar xvz
 
 WORKDIR /opt/steamcmd
 

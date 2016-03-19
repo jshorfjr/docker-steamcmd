@@ -1,6 +1,6 @@
 # docker-steamcmd
 
-This repository contains a **Dockerfile** of [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) for [Docker](https://www.docker.com)
+This repository contains a **Dockerfile** of [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) for [Docker](https://www.docker.com)'s [automated build](https://hub.docker.com/r/jshorfjr/docker-steamcmd/) published to the public [Docker Hub Registry](https://registry.hub.docker.com).
 
 ### Base Docker Image
 * [ubuntu:14.04](https://hub.docker.com/_/ubuntu/)
