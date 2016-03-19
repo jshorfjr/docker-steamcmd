@@ -10,10 +10,10 @@ MAINTAINER Jeffrey Shorf Jr. <jsho4realyo@gmail.com>
 RUN apt-get update &&\
     apt-get install curl lib32gcc1 -y
 
-# Create directory, switch to it, download SteamCMD for Linux
-RUN mkdir /opt/steamcmd &&\
+# Create directory, switch to it, download SteamCMD for Linux, Extract
+RUN mkdir -p /opt/steamcmd &&\
     cd /opt/steamcmd &&\
-    curl https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar xvz
+    curl -s https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar xvz
 
 WORKDIR /opt/steamcmd
 
