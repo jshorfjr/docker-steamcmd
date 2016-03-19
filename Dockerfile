@@ -4,12 +4,12 @@ MAINTAINER Jeffrey Shorf Jr. <jsho4realyo@gmail.com>
 
 # Install dependencies required to run SteamCMD
 RUN apt-get update &&\
-    apt-get install wget lib32gcc1 -y
+    apt-get install curl lib32gcc1 -y
 
 # Create directory, switch to it, download SteamCMD for Linux
 RUN mkdir /opt/steamcmd &&\
     cd /opt/steamcmd &&\
-    wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar -xzf
+    curl https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar xvz
 
 WORKDIR /opt/SteamCMD
 
