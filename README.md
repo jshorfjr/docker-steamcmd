@@ -22,8 +22,8 @@ docker run -it jshorfjr/docker-steamcmd \
 #### Username/Password
 ```
 docker run -it jshorfjr/docker-steamcmd \
-    +login <<steam_login>> <<steam_password>>
-    +force_install_dir /opt/arma3
+    +login <<steam_login>> <<steam_password>> \
+    +force_install_dir /opt/arma3 \
     +app_update 233780 -beta validate \
     +quit
 ```
