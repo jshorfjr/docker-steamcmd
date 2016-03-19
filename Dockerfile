@@ -1,3 +1,7 @@
+# SteamCMD Dockerfile for Ubuntu 14.04 Trusty
+# Step by step documentation found on Valve Developer Wiki
+# https://developer.valvesoftware.com/wiki/SteamCMD#Linux
+
 FROM ubuntu:14.04
 
 MAINTAINER Jeffrey Shorf Jr. <jsho4realyo@gmail.com>
