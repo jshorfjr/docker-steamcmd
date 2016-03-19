@@ -26,5 +26,4 @@ docker run -it jshorfjr/docker-steamcmd \
     +force_install_dir /opt/arma3
     +app_update 233780 -beta validate \
     +quit
-
 ```
