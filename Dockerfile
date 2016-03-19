@@ -15,6 +15,6 @@ RUN mkdir /opt/steamcmd &&\
     cd /opt/steamcmd &&\
     curl https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar xvz
 
-WORKDIR /opt/SteamCMD
+WORKDIR /opt/steamcmd
 
 ENTRYPOINT ["./steamcmd.sh"]
