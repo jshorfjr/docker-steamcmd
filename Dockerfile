@@ -8,8 +8,8 @@ RUN apt-get update &&\
 
 # Create directory, switch to it, download SteamCMD for Linux
 RUN mkdir /opt/steamcmd &&\
-	cd /opt/steamcmd&&\
-	wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar -xzf
+    cd /opt/steamcmd &&\
+    wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar -xzf
 
 WORKDIR /opt/SteamCMD
 
